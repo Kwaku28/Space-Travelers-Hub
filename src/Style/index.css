@@ -4,10 +4,12 @@
 }
 
 header {
-  border: 2px solid;
+  border-bottom: 1px solid;
   display: flex;
   justify-content: space-between;
   height: 12vh;
+  margin: 0 30px;
+  padding: 0 30px;
 }
 
 header div {
