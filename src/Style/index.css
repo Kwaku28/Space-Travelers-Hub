@@ -1,0 +1,38 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div h1 {
+  margin-left: 15px;
+}
+
+.planetImg {
+  height: 7vh;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: larger;
+  height: 12vh;
+  text-decoration: none;
+  cursor: pointer;
+}
