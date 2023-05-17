@@ -1,28 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './Style/index.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Mission from './components/Pages/Mission';
+import MyProfile from './components/Pages/MyProfile';
+import Rocket from './components/Pages/Rocket';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Rocket />} />
+        <Route path="/Mission" element={<Mission />} />
+        <Route path="/MyProfile" element={<MyProfile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
