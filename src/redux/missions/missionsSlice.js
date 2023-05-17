@@ -17,7 +17,7 @@ export const fetchMissions = createAsyncThunk(
   },
 );
 
-export const missionsSlice = createSlice({
+const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
