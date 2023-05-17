@@ -25,9 +25,10 @@ header div h1 {
 
 nav ul {
   display: flex;
+  list-style: none;
 }
 
-nav li {
+.link {
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -35,4 +36,8 @@ nav li {
   height: 12vh;
   text-decoration: none;
   cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
 }
