@@ -1,5 +1,5 @@
-/*eslint-disable*/
 import { useSelector } from 'react-redux';
+import MissionProfile from '../activeMission';
 import Navbar from '../navbar';
 
 const MyProfile = () => {
@@ -8,6 +8,7 @@ const MyProfile = () => {
     <>
       <Navbar />
       <section className='MyprofileContainer'>
+    <MissionProfile />
         <div className="RocketProfile">
         <h1 className="MyRocket">My Rockets</h1>
       <ul className='RocketUl'>
