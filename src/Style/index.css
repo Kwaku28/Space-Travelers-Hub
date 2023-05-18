@@ -38,6 +38,7 @@ nav ul {
   height: 12vh;
   text-decoration: none;
   cursor: pointer;
+  color: rgb(24, 83, 247);
 }
 
 .active {
@@ -46,25 +47,30 @@ nav ul {
 
 .MyprofileContainer {
   display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.RocketProfile {
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 87vh;
+  margin: 30px 0;
+  width: 45%;
 }
 
 .MyRocket {
-  font-size: 30px;
+  padding-bottom: 20px;
 }
 
 .RocketUl {
   text-decoration: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.454);
 }
 
 .RocketNames {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(128, 128, 128, 0.454);
-  text-decoration: none;
-  width: 40vh;
-  padding: 15px 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.454);
+  border-left: 1px solid rgba(128, 128, 128, 0.454);
+  padding: 20px;
 }
