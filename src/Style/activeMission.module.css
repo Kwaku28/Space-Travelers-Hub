@@ -1,18 +1,18 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: 30px 60px;
-  width: 40%;
+  margin: 30px 0;
+  width: 45%;
 }
 
 .header {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .missionlist {
   display: flex;
-  border-top: 1px solid;
-  border-right: 1px solid;
+  border-top: 1px solid rgba(128, 128, 128, 0.454);
+  border-right: 1px solid rgba(128, 128, 128, 0.454);
   padding: 20px;
 }
 
