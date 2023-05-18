@@ -1,8 +1,11 @@
-/*eslint-disable*/
+import MissionProfile from '../activeMission';
 import Navbar from '../navbar';
 
 const MyProfile = () => (
-  <Navbar />
-  )
+  <>
+    <Navbar />
+    <MissionProfile />
+  </>
+);
 
 export default MyProfile;

@@ -9,9 +9,12 @@ function DisplayMission() {
   const missionsData = useSelector((state) => state.missions.missions);
   const missionsStatus = useSelector((state) => state.missions.status);
   const missionsError = useSelector((state) => state.missions.error);
+
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (missionsData.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missionsData]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
