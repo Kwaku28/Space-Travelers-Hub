@@ -25,13 +25,12 @@ export const RocketList = () => {
             {rockets.map((rocket) => {
                 return (
                     <section className="section" key={rocket.id}>
-                        {console.log(rocket)}
                         <div className='img'>
                         <img src={rocket.RocketImages} alt="" />
                         </div>
                         <div className="details">
                             <h2>{rocket.RocketName}</h2>
-                            <p>{rocket.description}</p>
+                            <p> <span className={rocket.rocketStatus ? styles.badge : ''}>{rocket.rocketStatus? "Reseved" : ""}</span> {rocket.description}</p>
                             <button className={`${rocket.rocketStatus ? styles.reserve : styles.unreserve}`} onClick={() => dispatch(toggleRocketStatus(rocket.RocketId))}>
                             {rocket.rocketStatus ? 'Cancel reservation' : 'Reserve Rocket'}
                             </button>

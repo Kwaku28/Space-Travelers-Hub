@@ -9,7 +9,6 @@ function DisplayMission() {
   const missionsData = useSelector((state) => state.missions.missions);
   const missionsStatus = useSelector((state) => state.missions.status);
   const missionsError = useSelector((state) => state.missions.error);
-
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
