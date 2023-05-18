@@ -10,14 +10,19 @@ export const RocketList = () => {
     const { error, rocketStatus, rockets } = useSelector((state) => state.rockets);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(FetchApi());
+       if(!rockets.length){
+           dispatch(FetchApi());
+       } 
     }, [dispatch]);
     
     if (error) {
         return "There is an error";
     }
-    if (!rocketStatus) {
-        return "...Loading";
+
+    if (rocketStatus === 'loading'){
+        return (
+            <h1 style={{ textAlign: 'center'}}>Loading...</h1>
+          );
     }
 
     return (
