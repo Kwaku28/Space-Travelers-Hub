@@ -10,7 +10,7 @@ const FetchApi = createAsyncThunk('get/rockets', async () => {
   const data = Response.data;
   return data.map((Rocket) => ({
     RocketId: Rocket.id,
-    RocketName: Rocket.rocket_name,
+    RocketName: Rocket.name,
     description: Rocket.description,
     RocketImages: Rocket.flickr_images[0],
 }));  

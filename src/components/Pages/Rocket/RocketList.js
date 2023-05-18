@@ -7,12 +7,11 @@ import { toggleRocketStatus } from "../../../Redux/rockets/rocketsSlice";
 import styles from './rocket.module.css';
 
 export const RocketList = () => {
-    const { error, rocketStatus, rockets } = useSelector((state) => state.rocket);
+    const { error, rocketStatus, rockets } = useSelector((state) => state.rockets);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(FetchApi());
     }, [dispatch]);
-    console.log(FetchApi);
     
     if (error) {
         return "There is an error";
@@ -26,6 +25,7 @@ export const RocketList = () => {
             {rockets.map((rocket) => {
                 return (
                     <section className="section" key={rocket.id}>
+                        {console.log(rocket)}
                         <div className='img'>
                         <img src={rocket.RocketImages} alt="" />
                         </div>
