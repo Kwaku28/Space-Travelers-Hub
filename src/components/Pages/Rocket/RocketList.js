@@ -12,7 +12,7 @@ const RocketList = () => {
     if (!rockets.length) {
       dispatch(FetchApi());
     }
-  }, [dispatch]);
+  }, [dispatch, rockets]);
 
   if (error) {
     return 'There is an error';
