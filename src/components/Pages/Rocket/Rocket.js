@@ -1,14 +1,11 @@
-/*eslint-disable*/
-
 import Navbar from '../../navbar';
-import { RocketList } from './RocketList';
-
+import RocketList from './RocketList';
 
 const Rocket = () => (
   <>
-  <Navbar />
-  <RocketList />
+    <Navbar />
+    <RocketList />
   </>
-  );
+);
 
 export default Rocket;
