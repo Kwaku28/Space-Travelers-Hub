@@ -62,7 +62,12 @@ const missionsSlice = createSlice({
       })
       .addCase(fetchMissions.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.missions = action.payload;
+        state.missions = action.payload.map((mission) => ({
+          mission_id: mission.mission_id,
+          mission_name: mission.mission_name,
+          description: mission.description,
+          reserved: false,
+        }));
         state.loading = false;
       })
       .addCase(fetchMissions.rejected, (state, action) => {
@@ -73,5 +78,4 @@ const missionsSlice = createSlice({
 });
 
 export const { joinMission, leaveMission, bookedMissions } = missionsSlice.actions;
-
 export default missionsSlice.reducer;
