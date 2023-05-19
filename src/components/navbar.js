@@ -4,7 +4,7 @@ import planet from '../assets/planet.png';
 const Navbar = () => (
   <header>
     <div>
-      <img className="planetImg" src={planet} alt="" />
+      <img className="planetImg" src={planet} alt="Space Travelers Hub" />
       <h1>Space Travelers&apos; Hub</h1>
     </div>
     <nav>
