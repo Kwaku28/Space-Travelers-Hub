@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import Rocket from '../components/Pages/Rocket/Rocket';
-import store from '../redux/store';
+import store from '../Redux/store';
 
 describe('Test Mission component', () => {
   it('Renders well', () => {
