@@ -1,0 +1,24 @@
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  border-top: none;
+  text-align: left;
+  padding: 8px;
+}
+
+.status {
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+}
+
+.missionbtn {
+  color: #000;
+}

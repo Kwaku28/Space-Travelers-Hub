@@ -1,0 +1,75 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  margin: 0 30px;
+  padding: 0 30px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div h1 {
+  margin-left: 15px;
+}
+
+.planetImg {
+  height: 7vh;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: larger;
+  height: 12vh;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(24, 83, 247);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.MyprofileContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.RocketProfile {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  width: 45%;
+}
+
+.MyRocket {
+  padding-bottom: 20px;
+}
+
+.RocketUl {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.454);
+}
+
+.RocketNames {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.454);
+  padding: 20px;
+}
