@@ -1,12 +1,10 @@
 import { useSelector } from 'react-redux';
 import MissionProfile from '../activeMission';
-import Navbar from '../navbar';
 
 const MyProfile = () => {
   const rockets = useSelector((state) => (state.rockets.rockets));
   return (
     <>
-      <Navbar />
       <section className="MyprofileContainer">
         <MissionProfile />
         <div className="RocketProfile">
